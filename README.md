@@ -48,31 +48,22 @@ rm file3	Supprimer un fichier
 
 ## Diagramme du flow de commit avec les branch
 
-main
-│
-├── Initialisation du projet
-│
-└── develop
-      |── Création file1, file2, file3
-      ├── Commit
-      ├── Push
-      ├── Création README
-      ├── Modification fichiers
-      ├── Commit
-      │
-      └── Merge vers main
 
----
-title: Example Git diagram
----
-gitGraph
-   commit
-   commit
-   branch develop
-   checkout develop
-   commit
-   commit
-   checkout main
-   merge develop
-   commit
-   commit
+
+    gitGraph
+       commit
+       commit
+       commitmain
+        │
+        ├── Initialisation du projet
+        │
+        └── develop
+        |── Création file1, file2, file3
+        ├── Commit
+        ├── Push
+        ├── Création README
+        ├── Modification fichiers
+        ├── Commit
+        │
+        └── Merge vers main
+       
